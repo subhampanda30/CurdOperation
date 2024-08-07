@@ -10,17 +10,18 @@
 <h1>Index</h1>
 
 <p>
-    <a href="products/create">Create New</a>
+    <a href="products/create" class="btn btn-primary">Create New</a>
 </p>
 
 <QuickGrid Class="table" Items="DbFactory.CreateDbContext().Product">
+    <PropertyColumn Property="product => product.Id" />
     <PropertyColumn Property="product => product.Name" />
     <PropertyColumn Property="product => product.Price" />
     <PropertyColumn Property="product => product.Qty" />
 
     <TemplateColumn Context="product">
-        <a href="@($"products/edit?id={product.Id}")">Edit</a> |
-        <a href="@($"products/details?id={product.Id}")">Details</a> |
-        <a href="@($"products/delete?id={product.Id}")">Delete</a>
+        <a href="@($"products/edit?id={product.Id}")"class="btn btn-info">Edit</a> |
+        <a href="@($"products/details?id={product.Id}")"class="btn btn-success">Details</a> |
+        <a href="@($"products/delete?id={product.Id}")"class="btn btn-danger">Delete</a>
     </TemplateColumn>
 </QuickGrid>

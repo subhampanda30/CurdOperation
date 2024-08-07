@@ -31,14 +31,12 @@
                 <InputNumber id="qty" @bind-Value="Product.Qty" class="form-control" /> 
                 <ValidationMessage For="() => Product.Qty" class="text-danger" /> 
             </div>        
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Create</button> |
+            <a href="/products" class="btn btn-outline-secondary">Back to List</a>
         </EditForm>
     </div>
 </div>
 
-<div>
-    <a href="/products">Back to List</a>
-</div>
 
 @code {
 
