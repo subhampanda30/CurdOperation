@@ -7,4 +7,5 @@ The following image provides a visual representation of the basic CRUD operation
 - **Update**: Modifying an existing record.
 - **Delete**: Removing a record from the database.
 
-![image](https://github.com/user-attachments/assets/13350b15-2319-4b60-984b-92eb0819708a)
+![image](https://github.com/user-attachments/assets/7d772c35-ad94-4e5b-a9ef-9a9d52671002)
+
